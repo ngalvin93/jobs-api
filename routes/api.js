@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var axios = require('axios')
+var cors = require('cors')
+
+router.use(cors())
 
 /* GET github jobs listings in Atlanta */
 router.get('/jobs', function(req, res, next) {
